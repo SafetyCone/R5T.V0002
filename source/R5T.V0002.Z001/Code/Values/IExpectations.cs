@@ -2,6 +2,7 @@ using System;
 
 using R5T.L0087.T000;
 using R5T.T0131;
+using R5T.T0143;
 
 
 namespace R5T.V0002.Z001
@@ -13,7 +14,10 @@ namespace R5T.V0002.Z001
     public partial interface IExpectations : IValuesMarker
     {
 #pragma warning disable IDE1006 // Naming Styles
+
+        [Ignore]
         public Raw.IExpectations _Raw => Raw.Expectations.Instance;
+
 #pragma warning restore IDE1006 // Naming Styles
 
 
