@@ -1,2 +1,2 @@
 # R5T.V0002.Z001
-Path operation test expectation values.
+Expectations values for operations on common functionalities (like paths and day of week).
