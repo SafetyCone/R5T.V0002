@@ -32,7 +32,7 @@ namespace R5T.V0002
             {
                 var output = daysOfWeekPairs
                     .Select(pair => this.TestArticle.Get_DaysToNextDayOfWeek_Inclusive(pair.Item1, pair.Item2))
-                    .Now();
+                    .ToArray();
 
                 return output;
             }
@@ -54,7 +54,7 @@ namespace R5T.V0002
             {
                 var output = daysOfWeekPairs
                     .Select(pair => this.TestArticle.Get_DaysToNextDayOfWeek_Exclusive(pair.Item1, pair.Item2))
-                    .Now();
+                    .ToArray();
 
                 return output;
             }
@@ -76,7 +76,7 @@ namespace R5T.V0002
             {
                 var output = daysOfWeekPairs
                     .Select(pair => this.TestArticle.Get_DaysToPriorDayOfWeek_Inclusive(pair.Item1, pair.Item2))
-                    .Now();
+                    .ToArray();
 
                 return output;
             }
@@ -98,7 +98,7 @@ namespace R5T.V0002
             {
                 var output = daysOfWeekPairs
                     .Select(pair => this.TestArticle.Get_DaysToPriorDayOfWeek_Exclusive(pair.Item1, pair.Item2))
-                    .Now();
+                    .ToArray();
 
                 return output;
             }

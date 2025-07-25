@@ -39,7 +39,7 @@ namespace R5T.V0002
             {
                 var output = daysOfWeek
                     .Select(testArticle.Get_DayOfWeekNumber)
-                    .Now();
+                    .ToArray();
 
                 return output;
             }
